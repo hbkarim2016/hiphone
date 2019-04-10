@@ -1,0 +1,127 @@
+// ============================
+// Global style
+// == Header
+.toggle-button{
+  font-size: $global_size;
+}
+// == Head Title
+.head_title{
+  p{
+    width: 50% !important;
+  }
+}
+// == Swiper Edit
+.swiper-container{
+  padding: 50px 30px;
+}
+.swiper-button-prev , .swiper-button-next{
+  background-image:none;
+  width: auto;
+  height: auto;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-button-next{
+  right: 0;
+}
+// == Downlaod Button Apps
+.download_imgs{
+  img{
+    width: 80% !important;
+    margin-top: 10px;
+    &:hover{
+      cursor: pointer;
+      opacity: .7;
+    }
+  }
+}
+
+// ===========================
+// 	-- Start Homepage Style
+
+// Home
+.home-section{
+  background-image:url(../imgs/backgrounds/background_title.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  .home-phone{
+    .phone
+      img{
+        position: relative;
+        animation: phone 2s linear infinite;
+      }
+  }
+  .home-features{
+    margin-top: 7%;
+    margin-bottom: 7%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+// Screenshot
+.screenshots-section{
+  padding-top: 0;
+  .drop-screenshots{
+    padding-top: 7% !important;
+    padding-bottom:5% !important;
+    h3 , p , i {
+      color: white !important;
+    }
+    .phone-background{
+      padding: 0 387px;
+      margin-bottom: 0;
+    }
+    .swiper-container-5slider{
+      overflow: hidden;
+      margin-top: -409px;
+      padding-bottom: 40px;
+      .swiper-slide{
+        opacity: .2;
+        padding: 20px;
+      }
+      .swiper-slide-active{
+        opacity: 1;
+        margin-right: 10px;
+        padding: 0;
+      }
+    }
+  }
+  .people-say{
+    padding-top: 10% !important;
+  }
+}
+
+// Download
+.download-section{
+  padding-top: 0 !important;
+  .download-title{
+    align-self: center;
+    p , h2{
+      color:white !important;
+    }
+  }
+  .download-img{
+    padding-bottom: 5% !important;
+  }
+}
+
+// latest Stories
+.latest-stories{
+  padding-top: 10% !important;
+  .stories-title{
+    padding-bottom: 5% !important;
+  }
+  .readMore{
+    color: white !important;
+    font-size: $min_size;
+    background: #714ac7;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    margin-left: 20px;
+    border-radius: 30px;
+  }
+}
+// ============================

@@ -1,0 +1,83 @@
+@media (min-width: 768px) and (max-width: 991px) {
+  // == Global Style
+  body{
+    h2{
+      font-size: 28px;
+    }
+    p{
+      font-size: 13px;
+    }
+  }
+
+  // == Head Title
+  .head_title{
+    p{
+      width: 70% !important;
+    }
+  }
+
+  // == Preloader
+  .preloader{
+    .preloader_animation{
+      padding: 70px;
+      padding-bottom: 30px;
+    }
+  }
+
+  // == Header
+  .navbar-collapse{
+    background-color: $main_color;
+    padding: 10px;
+  }
+
+  // == Home
+  .home-section{
+    background-position: 10% -12%;
+    padding-top: 15%;
+    padding-bottom: 5%;
+    .home-head{
+      padding: 5% 0;
+    }
+    .feature{
+      padding-top: 5%;
+    }
+  }
+
+  // == Screenshots Section
+  .screenshots-section{
+    .drop-screenshots{
+
+      .phone-background{
+        padding: 0 262px;
+      }
+      .swiper-container-5slider{
+        margin-top: -204px;
+        padding-bottom: 40px;
+        .swiper-slide{
+          opacity: .2;
+          padding: 10px;
+        }
+        .swiper-slide-active{
+          opacity: 1;
+          padding: 2px !important;
+        }
+      }
+    }
+  }
+
+  // == Story Section
+  .story{
+
+    .detailsStoryDiv{
+      top: 49.5%;
+      left: 15%;
+      width: 70%;
+    }
+
+  }
+
+  .readMore{
+    margin-bottom: 55px;
+  }
+
+}

@@ -1,0 +1,27 @@
+.people-say{
+  .swiper-container{
+    .slick-item{
+      background-color:#f4f9ff;
+      img{
+        border-radius: 50%;
+      }
+      p{
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      .slick-item-member{
+        padding-top: 20px;
+
+        .member-details{
+          align-self: center;
+          h6{
+            margin-bottom: 5px;
+          }
+          span{
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.preloader{
+  background-color: $main_color;
+  z-index: 9999;
+  .preloader_animation{
+    padding: 130px;
+    padding-bottom: 30px;
+  }
+}

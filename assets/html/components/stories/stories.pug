@@ -1,0 +1,21 @@
+
+//- Mixin Stories Body
+
+mixin story( imgStory , adminName , dateStory , titleStory , contentStory )
+  // Story 
+  .story
+    .imgStoryDiv
+      img(src="assets/imgs/stories/"+imgStory)
+    .detailsStoryDiv
+      .row
+        div(class="detailsAdmin col-auto")
+          i(class="fas fa-user-tie")
+          span By: 
+            h6(class="d-inline-block")= adminName
+        div(class="detailsDate col-auto")
+          i(class="far fa-calendar-alt")
+          span= dateStory
+    .contentStoryDiv
+      .contentTitleStory
+        h5= titleStory
+        p= contentStory

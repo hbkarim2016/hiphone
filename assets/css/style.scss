@@ -1,0 +1,29 @@
+// == Includes
+@import "helpers/_variables";
+@import "helpers/_global";
+
+// == Preloader
+@import "compontents/preloader/_preloader.scss";
+// == Button Up
+@import "compontents/button_up/_button_up.scss";
+// == Header
+@import "includes/_header";
+@import "compontents/background_hiphone/_bg_hiphone.scss";
+// == Home Page
+@import "compontents/animations/_anime_phone.scss";
+@import "compontents/background_video/_background_video.scss";
+@import "compontents/comments/_comment_style.scss";
+@import "compontents/stories/_story.scss";
+@import "pages/_homepage";
+// == Footer
+@import "includes/_footer";
+
+// == Responsives
+// --- Screen 992
+@import "includes/responsives/_screen_992.scss";
+// --- Screen 768
+@import "includes/responsives/_screen_768.scss";
+// --- Screen 600
+@import "includes/responsives/_screen_600.scss";
+// --- Screen 320
+@import "includes/responsives/_screen_320.scss";

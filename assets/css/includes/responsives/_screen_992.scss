@@ -1,0 +1,38 @@
+@media (min-width: 992px) and (max-width: 1200px) {
+  // == Preloader
+  .preloader{
+    .preloader_animation{
+      padding: 100px;
+      padding-bottom: 30px;
+    }
+  }
+
+  // == Screenshots Section
+  .screenshots-section{
+
+    .drop-screenshots{
+
+      .phone-background{
+        padding: 0 350px;
+      }
+
+      .swiper-container-5slider{
+        margin-top: -280px;
+      }
+
+    }
+
+  }
+
+  // == Story Section
+  .story{
+
+    .detailsStoryDiv{
+      top: 46%;
+      left: 15%;
+      width: 70%;
+    }
+
+  }
+
+}

@@ -1,0 +1,18 @@
+.bg_video{
+  background-image:url(../imgs/backgrounds/background_video.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  .bg_overColor{
+    background-image:url(../imgs/backgrounds/background.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    opacity: .8;
+    i{
+      color: white !important;
+      padding: 13%;
+    }
+  }
+}

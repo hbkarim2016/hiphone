@@ -1,0 +1,9 @@
+
+//- Members Component
+
+mixin member(memberName , memberTitle , memberImage)
+  div(class="member-img col-4")
+    img(src="assets/imgs/members/"+memberImage class="img-responsive w-100")
+  div(class="member-details col-8")
+    h6= memberName
+    span= memberTitle

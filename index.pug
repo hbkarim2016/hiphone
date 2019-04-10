@@ -1,0 +1,23 @@
+doctype
+//- == INIT Include
+include assets/init
+
+//- ==== Start website HTML ====
+html
+  
+  head
+    include assets/html/includes/the-head
+  
+  body(class="doNicescroll")
+    //- Include Body Content
+    include assets/html/includes/preloader
+    include assets/html/includes/button_up
+    include assets/html/includes/header
+    include assets/html/pages/homepage
+    include assets/html/includes/footer
+    |
+    //- Include Scripts
+    |
+    include assets/html/includes/the-scripts
+    
+//- ==== End Website HTML ====

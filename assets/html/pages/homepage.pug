@@ -1,0 +1,283 @@
+
+//- == Includes
+
+//- Include Mixins Read More Button
+include ../components/download_stores/download_stores.pug
+//- Include Mixins Head Title
+include ../components/head_titles/head_title_details.pug
+//- Include Mixins Items Features
+include ../components/items_features/item_features.pug
+//- Include Mixins SCREENSHOTS
+include ../components/screenshots/slick-item-mixins
+//- Include Mixins MEMBER
+include ../components/members/member
+//- Include Mixins Slick Buttons
+include ../components/slick-tools/prevAndNext
+//- Include Mixins Latest Stories
+include ../components/stories/stories
+//- Include Mixins Read More Button
+include ../components/stories/readMoreButton
+
+//- =====================================
+
+//- == HTML CODE
+// === Start Content === 
+.all_section
+  // = Start Home Section = 
+  section(id="home" class="section home-section")
+    .container
+      // Home Title 
+      div(class="home-head row")
+        // Home Details 
+        div(class="home-head-details align-self-center col-lg-8 col-md-10 text-left")
+          .w-75
+            h2 Make your business easy with HIphoNe 
+            p HIphoNe is a Powerful Landing Page Template for Mobile App. HIphoNe is better way to present and promote your startup mobile app website."
+              
+          +download_store("app store" , "play store")
+        // Home Phone 
+        div(class="home-phone col-md-3 d-none d-lg-inline-block")
+          div(class="phone text-center")
+              img(src=imgs+"phones/phone1.png" alt="phone" class="mx-auto")
+    //- ================================================
+    //- ========= End Home Title
+    //- ================================================
+    .container
+      // Home Feature 
+      div(class="home-features row")
+        // = Feature 1 
+        div(class="feature col-lg-4 col-md-6")
+          +item_feature(
+            "s fa-sliders-h" , 
+            "EASY TO USE" , 
+            "Lorem ipsum dolor sit amet adipisicing of more of sedis do eiusmod tempor incididunt. Appipsum incididunt."
+              )
+        // = Feature 2 
+        div(class="feature col-lg-4 col-md-6")
+          +item_feature(
+            "s fa-signature" , 
+            "STUNNING DESIGN" , 
+            "Lorem ipsum dolor sit amet adipisicing of more of sedis do eiusmod tempor incididunt. Appipsum incididunt."
+              )
+        // = Feature 3 
+        div(class="feature col-lg-4 col-md-6")
+          +item_feature(
+            "b fa-skyatlas" , 
+            "EASY TO USE" , 
+            "Lorem ipsum dolor sit amet adipisicing of more of sedis do eiusmod tempor incididunt. Appipsum incididunt."
+              )
+    // Home Video
+    .bg_video
+      div(class="home-video w-100 h-100 bg_overColor text-center")
+        a(href="https://www.youtube.com/watch?v=z8OWD3Bg1tQ")
+          i(class="fab fa-youtube")
+    //- ================================================
+    //- ========= End Home Feature
+    //- ================================================
+  // = End Home Section = 
+  //- ===================================
+
+  // = Start Features Section = 
+  section(id="feature" class="section feature-section container")
+    .feature-title
+      +head_title(
+        "HIphoNe Features" , 
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries."
+          )
+    //- Drop Carousels
+    // = Drop Features = 
+    .swiper-container
+      //  Drop Items  
+      div(class="swiper-wrapper")
+        // Item 1 
+        div(class="swiper-slide p-4")
+          +item_feature(
+            "s fa-sliders-h" , 
+            "FREE UPDATES" , 
+            "Lorem Ipsum is simply text of the printing and typesetting industry.It has centuries."
+              )
+        // Item 2 
+        div(class="swiper-slide p-4")
+          +item_feature(
+            "r fa-heart" , 
+            "MADE WITH LOVE" , 
+            "Lorem Ipsum is simply text of the printing and typesetting industry.It has centuries."
+              )
+        // Item 3 
+        div(class="swiper-slide p-4")
+          +item_feature(
+            "s fa-shield-alt" , 
+            "RWTINA READY" , 
+            "Lorem Ipsum is simply text of the printing and typesetting industry.It has centuries."
+              )
+        // Item 4 
+        div(class="swiper-slide p-4")
+          +item_feature(
+            "r fa-comments" , 
+            "24/7 SUPPORT" , 
+            "Lorem Ipsum is simply text of the printing and typesetting industry.It has centuries."
+              )
+        // Item 5 
+        div(class="swiper-slide p-4")
+          +item_feature(
+            "s fa-clone" , 
+            "GREATE INTERFACE" , 
+            "Lorem Ipsum is simply text of the printing and typesetting industry.It has centuries."
+              )
+        // Item 6 
+        div(class="swiper-slide p-4")
+          +item_feature(
+            "b fa-skyatlas" , 
+            "PURE & SIMPLE" , 
+            "Lorem Ipsum is simply text of the printing and typesetting industry.It has centuries."
+              )
+              
+      // Prev And Next Buttons 
+      +slick_button("left" , "right")
+
+  // = End Feature Section = 
+  //- ===================================
+
+  // = Start Sceenshots Section = 
+  section(id="screenshot" class="section screenshots-section")
+      div(class="bg_hiphone drop-screenshots")
+        .container
+          .screenshots-title
+            +head_title(
+              "Screenshots" , 
+              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries."
+                )
+          //- Drop Carousels
+          // = Drop Screenshots = 
+          
+          div(class="phone-background text-center")
+              img(src=imgs+"backgrounds/phone_background.png" alt="phone" class="mx-auto")
+          
+          div(class="swiper-container-5slider position-relative")
+            //  Drop Items  
+            div(class="swiper-wrapper")
+              // Item 1 
+              +slick-item('screenshots/screenshot-1.jpg')
+              // Item 2 
+              +slick-item('screenshots/screenshot-2.jpg')
+              // Item 3 
+              +slick-item('screenshots/screenshot-3.jpg')
+              // Item 4 
+              +slick-item('screenshots/screenshot-4.jpg')
+              // Item 5 
+              +slick-item('screenshots/screenshot-5.jpg')
+              // Item 6 
+              +slick-item('screenshots/screenshot-6.jpg')
+            // Prev And Next Buttons   
+            +slick_button("left" , "right")    
+      //- What People Say section      
+      // = What People Say = 
+      div(class="container")
+        .people-say
+          .people-title
+            +head_title(
+              "What People Say" , 
+              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries."
+                )
+          .swiper-container
+            div(class="swiper-wrapper")
+              // Item 1 
+              .swiper-slide
+                div(class="slick-item p-4 m-2")
+                  p Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic.
+                  div(class="slick-item-member row")
+                    +member("ADEM AHMED" , "DESIGNER" , "member-1.jpg")
+              // Item 2 
+              .swiper-slide
+                div(class="slick-item p-4 m-2")
+                  p Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic.
+                  div(class="slick-item-member row")
+                    +member("ADEM AHMED" , "DESIGNER" , "member-2.jpg")
+              // Item 3 
+              .swiper-slide
+                div(class="slick-item p-4 m-2")
+                  p Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic.
+                  div(class="slick-item-member row")
+                    +member("ADEM AHMED" , "DESIGNER" , "member-3.jpg")
+              // Item 4 
+              .swiper-slide
+                div(class="slick-item p-4 m-2")
+                  p Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic.
+                  div(class="slick-item-member row")
+                    +member("ADEM AHMED" , "DESIGNER" , "member-2.jpg")
+              // Item 5 
+              .swiper-slide
+                div(class="slick-item p-4 m-2")
+                  p Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic.
+                  div(class="slick-item-member row")
+                    +member("ADEM AHMED" , "DESIGNER" , "member-1.jpg")
+              // Item 6 
+              .swiper-slide
+                div(class="slick-item p-4 m-2")
+                  p Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic.
+                  div(class="slick-item-member row")
+                    +member("ADEM AHMED" , "DESIGNER" , "member-3.jpg")
+            // Prev And Next Buttons   
+            +slick_button("left" , "right")    
+          
+  // = End Sceenshots Section = 
+  //- ===================================
+
+  // = Start Download Section = 
+  section(id="download" class="section download-section")
+      .bg_hiphone
+        .container
+          .row
+            // = Download Free = 
+            div(class="download-title col-md-6 text-left")
+              h2 Try HIphoNe app for free! 
+              p HIphoNe is a Powerful Landing Page Template for Mobile App. HIphoNe is better way to present and promote your startup mobile app website."
+            
+              +download_store("app store" , "play store")
+            div(class="col-md-6")
+              .download-img
+                img(src="assets/imgs/download-imgs/download_image.png" alt="download")
+      // = Latest Stories = 
+      .container
+        .latest-stories
+          .stories-title
+            +head_title(
+              "Latest Stories" , 
+              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries."
+                )
+          div(class="stories-body row")
+            //- Story 1
+            div(class="col-lg-4 col-md-6")
+              +story( 
+                "story-1.jpg" , 
+                "ADMIN" , 
+                "JAN 01, 2018" , 
+                "THIS IS TITLE OF THE STORY" , 
+                "Lorem Ipsum is simply text of the printing and typesetting industry.It has survived not only five centuries." 
+                )
+              +readMore("READ MORE")
+            //- Story 2
+            div(class="col-lg-4 col-md-6")
+              +story( 
+                "story-2.jpg" , 
+                "ADMIN" , 
+                "JAN 01, 2018" , 
+                "THIS IS TITLE OF THE STORY" , 
+                "Lorem Ipsum is simply text of the printing and typesetting industry.It has survived not only five centuries." 
+                )
+              +readMore("READ MORE")
+            //- Story 3
+            div(class="col-lg-4 col-md-6")
+              +story( 
+                "story-3.jpg" , 
+                "ADMIN" , 
+                "JAN 01, 2018" , 
+                "THIS IS TITLE OF THE STORY" , 
+                "Lorem Ipsum is simply text of the printing and typesetting industry.It has survived not only five centuries." 
+                )
+              +readMore("READ MORE")
+          
+  // = End Download Section = 
+//- ===================================
+
+// === End Content === 
