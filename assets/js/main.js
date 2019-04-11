@@ -94,6 +94,6 @@ $(document).ready(function(){
   // =================================
 
   // == Preloader Hide
-  $('.preloader').delay(5000).fadeOut(300);
+  $('.preloader').delay(10000).fadeOut(300);
 
 });
